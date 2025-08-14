@@ -48,7 +48,11 @@ function closeModal() {
 }
 
 // Close ketika klik tombol silang
-document.getElementById("modalClose").addEventListener("click", closeModal);
+// document.getElementById("modalClose").addEventListener("click", closeModal);
+const modalCloseBtn = document.getElementById("modalClose");
+if (modalCloseBtn) {
+  modalCloseBtn.addEventListener("click", closeModal);
+}
 
 // Close ketika klik di luar modal
 document
@@ -58,3 +62,36 @@ document
       closeModal();
     }
   });
+
+// Animasi
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("opacity-100", "translate-y-0");
+      }
+    });
+  },
+  { threshold: 0.1 }
+);
+
+document.querySelectorAll(".scroll-anim").forEach((el) => {
+  el.classList.add(
+    "opacity-0",
+    "translate-y-10",
+    "transition-all",
+    "duration-700"
+  );
+  observer.observe(el);
+});
+
+// Fade-in
+document.querySelectorAll(".scroll-anim").forEach((el) => {
+  el.classList.add(
+    "opacity-0",
+    "translate-y-10",
+    "transition-all",
+    "duration-700"
+  );
+  observer.observe(el);
+});
