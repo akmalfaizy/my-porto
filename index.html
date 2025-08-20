@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akmal Faizy's Porto</title>
+    <link href="dist/output.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/dist/img/favicon.png" />
+  </head>
+  <body class="bg-slate-100">
+    <!-- Header Start -->
+    <header
+      class="bg-transparent px-2 py-2 md:px-8 md:py-1 lg:py-0 backdrop-blur-sm fixed top-0 left-0 w-full flex items-center z-10 transition-all duration-300 shadow-none"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <!-- Logo -->
+          <div class="px-2 flex items-center space-x-2">
+            <div
+              class="bg-primary text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
+            >
+              <a href="#home" class="font-bold text-lg">AF</a>
+            </div>
+            <!-- <a
+              href="#home"
+              class="font-bold text-xl text-primary hover:text-primary/80 transition-colors block py-6"
+            >
+              Akmal Faizy
+            </a> -->
+          </div>
+
+          <!-- Menu & Hamburger -->
+          <div class="flex items-center px-4">
+            <!-- Tombol Hamburger -->
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden focus:outline-none"
+            >
+              <span
+                class="hamburger-line bg-dark transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line bg-dark transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line bg-dark transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+
+            <!-- Navigasi Menu -->
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="relative text-base text-dark py-2 mx-8 flex transition-colors group-hover:text-primary"
+                  >
+                    Home
+                    <span
+                      class="absolute left-0 -bottom-1 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"
+                    ></span>
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="relative text-base text-dark py-2 mx-8 flex transition-colors group-hover:text-primary"
+                  >
+                    About
+                    <span
+                      class="absolute left-0 -bottom-1 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"
+                    ></span>
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href="#education"
+                    class="relative text-base text-dark py-2 mx-8 flex transition-colors group-hover:text-primary"
+                  >
+                    Education
+                    <span
+                      class="absolute left-0 -bottom-1 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"
+                    ></span>
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href="#portofolio"
+                    class="relative text-base text-dark py-2 mx-8 flex transition-colors group-hover:text-primary"
+                  >
+                    Portofolio
+                    <span
+                      class="absolute left-0 -bottom-1 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"
+                    ></span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-20">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1
+              class="text-base font-semibold text-teal-500 md:text-xl lg:text-2xl"
+            >
+              Hi There
+              <span class="block font-bold text-primary text-3xl lg:text-5xl"
+                >I'am Akmal Faizy</span
+              >
+            </h1>
+            <h2 class="font-medium text-slate-900 text-lg">
+              Android Developer
+            </h2>
+            <h2 class="font-medium text-primary italic text-lg mb-2">
+              Experience 2 Years +
+            </h2>
+            <a
+              href="https://wa.me/6281223917160"
+              target="_blank"
+              class="inline-block bg-primary text-white font-semibold py-3 px-6 rounded-full shadow-md hover:bg-primary/80 transition-colors"
+            >
+              Hire Me!
+            </a>
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:mt-9 lg:right-0">
+              <img
+                src="/dist/img/akmal_faizy.png"
+                alt="Akmal Faizy"
+                class="max-w-full mx-auto"
+              />
+              <span
+                class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125"
+              >
+                <svg
+                  width="400"
+                  height="400"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#14b8a6"
+                    d="M48.7,-64.1C64.1,-55.9,78.3,-43,83.3,-27.1C88.4,-11.3,84.4,7.4,76.5,22.8C68.6,38.1,56.9,50.2,43.5,61.3C30.1,72.5,15.1,82.8,-0.7,83.8C-16.5,84.8,-32.9,76.4,-47.5,65.6C-62.1,54.8,-74.9,41.6,-79.3,26.2C-83.7,10.8,-79.8,-6.9,-73.7,-23.4C-67.7,-39.9,-59.4,-55.2,-46.8,-64.3C-34.2,-73.5,-17.1,-76.4,-0.2,-76.1C16.7,-75.8,33.3,-72.3,48.7,-64.1Z"
+                    transform="translate(100 100) scale(0.8)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+
+    <section id="about" class="pt-24 pb-12 bg-slate-200">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <!-- About Me -->
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h4 class="font-bold uppercase text-primary text-lg mb-3">
+              About Me
+            </h4>
+            <p class="font-medium text-secondary lg:text-lg text-justify">
+              I am a Computer Science graduate from Universitas Teknologi
+              Yogyakarta (GPA 3.80) with strong leadership, analytical thinking,
+              and project management skills. Experienced in mobile application
+              development, event coordination, and social media management.
+              Adept at problem-solving, adaptable to dynamic environments, and
+              committed to delivering impactful results.
+            </p>
+
+            <p class="font-medium text-secondary lg:text-lg mt-4 text-justify">
+              <strong>Soft Skills:</strong> Leadership, teamwork, adaptability,
+              effective communication, analytical thinking, time management,
+              decision making, problem solving, detail-oriented, and
+              responsible.
+            </p>
+          </div>
+
+          <!-- Let's be friend -->
+          <div class="w-full px-4 lg:w-1/2">
+            <h4 class="font-bold uppercase text-primary text-lg mb-3">
+              Let's Be a Friend
+            </h4>
+            <p
+              class="font-medium text-base text-secondary mb-4 lg:text-lg text-justify"
+            >
+              Feel free to connect with me through social media or contact me
+              directly.
+            </p>
+            <div class="flex items-center">
+              <!-- Instagram -->
+              <a
+                class="w-9 h-9 rounded-full flex justify-center items-center border border-black hover:border-primary hover:bg-primary hover:text-white"
+                href="https://www.instagram.com/akmalfaizy_/"
+                target="_blank"
+              >
+                <svg
+                  class="fill-current"
+                  role="img"
+                  width="20"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.338 3.608 1.314.975.975 1.251 2.242
+               1.313 3.608.058 1.265.069 1.645.069 4.849s-.012 3.584-.069 4.849c-.062 1.366-.338
+               2.633-1.313 3.608-.975.975-2.242 1.251-3.608 1.313-1.265.058-1.645.069-4.849.069s-3.584
+               -.012-4.849-.069c-1.366-.062-2.633-.338-3.608-1.313-.975-.975-1.251-2.242-1.313
+               -3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.849c.062-1.366.338-2.633
+               1.313-3.608.975-.975 2.242-1.251 3.608-1.313C8.416 2.175 8.796 2.163 12 2.163zm0
+               1.838c-3.177 0-3.547.012-4.797.069-1.159.053-1.791.24-2.205.399-.566.217-.972.478
+               -1.402.908s-.691.835-.908 1.402c-.159.414-.346 1.046-.399 2.205-.057 1.25-.069
+               1.62-.069 4.797s.012 3.547.069 4.797c.053 1.159.24 1.791.399 2.205.217.566.478.972
+               .908 1.402s.835.691 1.402.908c.414.159 1.046.346 2.205.399 1.25.057 1.62.069
+               4.797.069s3.547-.012 4.797-.069c1.159-.053 1.791-.24 2.205-.399.566-.217.972-.478
+               1.402-.908s.691-.835.908-1.402c.159-.414.346-1.046.399-2.205.057-1.25.069-1.62.069
+               -4.797s-.012-3.547-.069-4.797c-.053-1.159-.24-1.791-.399-2.205-.217-.566-.478-.972
+               -.908-1.402s-.835-.691-1.402-.908c-.414-.159-1.046-.346-2.205-.399-1.25-.057
+               -1.62-.069-4.797-.069z"
+                  />
+                  <path
+                    d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0
+               10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998z"
+                  />
+                  <circle cx="18.406" cy="5.594" r="1.44" />
+                </svg>
+              </a>
+
+              <!-- LinkedIn -->
+              <a
+                class="w-9 h-9 mx-2 rounded-full flex justify-center items-center border border-black hover:border-primary hover:bg-primary hover:text-white"
+                href="https://www.linkedin.com/in/akmalfaizy/"
+                target="_blank"
+              >
+                <svg
+                  class="fill-current"
+                  role="img"
+                  width="20"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>LinkedIn</title>
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.85
+               -3.037-1.853 0-2.136 1.445-2.136 2.938v5.668H9.353V9h3.415v1.561h.049c.476-.9
+               1.637-1.85 3.368-1.85 3.599 0 4.264 2.368 4.264 5.451v6.29zM5.337
+               7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.777
+               13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774
+               0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.208
+               24 24 23.227 24 22.271V1.729C24 .774 23.208 0 22.225 0z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section End -->
+
+    <section id="education" class="pt-24 bg-slate-100">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-6">
+            <h4 class="font-semibold text-primary text-lg mb-2">Education</h4>
+            <h2 class="font-bold text-dark text-3xl mb-4">
+              My Academic Journey
+            </h2>
+          </div>
+        </div>
+        <div
+          class="w-full px-4 flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0"
+        >
+          <!-- Card 1 -->
+          <div class="bg-white rounded-lg shadow-md p-6 flex-1">
+            <h3 class="font-bold text-xl text-dark mb-2">
+              University of Technology Yogyakarta
+            </h3>
+            <p class="text-secondary mb-1">
+              Bachelor's Degree in Computer Science
+            </p>
+            <p class="text-secondary text-sm">
+              September 2021 - July 2025 | GPA: 3.80/4.00
+            </p>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-white rounded-lg shadow-md p-6 flex-1">
+            <h3 class="font-bold text-xl text-dark mb-2">
+              Vocational High School 2 Ciamis
+            </h3>
+            <p class="text-secondary mb-1">
+              SMK / Major in Computer and Network Engineering
+            </p>
+            <p class="text-secondary text-sm">
+              July 2018 - May 2021 | Final Score: 86.18
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="organization" class="pt-12 bg-slate-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-4">
+          Organization Experience
+        </h2>
+
+        <div class="relative">
+          <!-- Vertical Line (hanya muncul di md ke atas) -->
+          <div
+            class="mt-4 hidden md:block absolute left-1/2 top-0 h-full w-1 bg-gray-300 -translate-x-1/2"
+          ></div>
+
+          <!-- Item 1 -->
+          <div class="flex flex-col md:flex-row items-center">
+            <!-- Dot (hanya md ke atas) -->
+            <div
+              class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-4 border-blue-500 rounded-full"
+            ></div>
+
+            <!-- Card -->
+            <div class="md:w-1/2 md:pr-12 mx-4 my-4">
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold">
+                  Staff Research and Development
+                </h3>
+                <p class="text-gray-600">
+                  KSPM Universitas Teknologi Yogyakarta
+                </p>
+                <span class="text-sm text-gray-500"
+                  >September 2023 - September 2024</span
+                >
+                <p class="mt-2 text-gray-700">
+                  Managed social media, designed engaging content, and supported
+                  organizational development programs.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="flex flex-col md:flex-row items-center">
+            <!-- Dot (hanya md ke atas) -->
+            <div
+              class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-4 border-blue-500 rounded-full"
+            ></div>
+
+            <!-- Spacer untuk alignment desktop -->
+            <div class="hidden md:block md:w-1/2"></div>
+
+            <!-- Card -->
+            <div class="md:w-1/2 md:pl-8 mx-4 my-4">
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold">PDD Division</h3>
+                <p class="text-gray-600">
+                  KSPM Open Recruitment & Basic Training Committee
+                </p>
+                <span class="text-sm text-gray-500">December, 2023</span>
+                <p class="mt-2 text-gray-700">
+                  Led a team in creating digital assets, branding materials, and
+                  coordinated design workshops.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="flex flex-col md:flex-row items-center">
+            <!-- Dot (hanya md ke atas) -->
+            <div
+              class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-4 border-blue-500 rounded-full"
+            ></div>
+
+            <!-- Card -->
+            <div class="md:w-1/2 md:pr-12 mx-4 my-4">
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold">Chairperson</h3>
+                <p class="text-gray-600">Karang Taruna</p>
+                <span class="text-sm text-gray-500"
+                  >Agustus 2022 - Agustus 2023</span
+                >
+                <p class="mt-2 text-gray-700">
+                  Organized and managed technology events, coordinating with
+                  multiple departments and sponsors.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="flex flex-col md:flex-row items-center">
+            <!-- Dot (hanya md ke atas) -->
+            <div
+              class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-4 border-blue-500 rounded-full"
+            ></div>
+
+            <!-- Spacer untuk alignment desktop -->
+            <div class="hidden md:block md:w-1/2"></div>
+
+            <!-- Card -->
+            <div class="md:w-1/2 md:pl-8 mx-4 my-4">
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold">Equipment Division</h3>
+                <p class="text-gray-600">KSPM Grand Council Committee</p>
+                <span class="text-sm text-gray-500">September, 2023</span>
+                <p class="mt-2 text-gray-700">
+                  Led a team in creating digital assets, branding materials, and
+                  coordinated design workshops.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="flex flex-col md:flex-row items-center">
+            <!-- Dot (hanya md ke atas) -->
+            <div
+              class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-4 border-blue-500 rounded-full"
+            ></div>
+
+            <!-- Card -->
+            <div class="md:w-1/2 md:pr-12 mx-4 my-4">
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold">Event Division</h3>
+                <p class="text-gray-600">KSPM UTY Industrial Visit</p>
+                <span class="text-sm text-gray-500">July, 2023</span>
+                <p class="mt-2 text-gray-700">
+                  Organized and managed technology events, coordinating with
+                  multiple departments and sponsors.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="mb-8 flex flex-col md:flex-row items-center">
+            <!-- Dot (hanya md ke atas) -->
+            <div
+              class="mb-8 hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-4 border-blue-500 rounded-full"
+            ></div>
+
+            <!-- Spacer untuk alignment desktop -->
+            <div class="hidden md:block md:w-1/2"></div>
+
+            <!-- Card -->
+            <div class="md:w-1/2 md:pl-8 mx-4 my-4">
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold">Chairperson</h3>
+                <p class="text-gray-600">
+                  Capital Market School Seminar Organizing Committee
+                </p>
+                <span class="text-sm text-gray-500">May, 2023</span>
+                <p class="mt-2 text-gray-700">
+                  Led a team in creating digital assets, branding materials, and
+                  coordinated design workshops.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portofolio Section Start -->
+
+    <section id="portofolio" class="pt-24 bg-slate-200">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-6">
+            <h4 class="font-semibold text-primary text-lg mb-2">Portofolio</h4>
+            <h2 class="font-bold text-dark text-3xl mb-4">Newest Project</h2>
+            <p class="font-medium text-md text-secondary">
+              My latest project, crafted with a focus on responsive design,
+              functionality, and a clean, modern look.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card Container -->
+        <div class="w-full px-4 flex flex-wrap justify-center">
+          <!-- Card 1 -->
+          <div class="mb-12 p-4 md:w-1/2">
+            <div
+              class="rounded-md shadow-md overflow-hidden cursor-pointer"
+              onclick="openModalFromElement('dist/img/portofolio_1.png', 'Korean Language Learning App', 'desc1')"
+            >
+              <img
+                src="dist/img/portofolio_1.png"
+                alt="Korean Language Learning App"
+              />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+              Korean Language Learning App
+            </h3>
+            <p
+              id="desc1"
+              class="font-medium text-base text-secondary line-clamp-3"
+            >
+              Interested in learning the Korean language and exploring its
+              culture? Our Android-based app is designed to provide a complete
+              and engaging learning experience. From mastering basic consonants
+              and vowels to discovering Korean cuisine and traditional
+              celebrations, the app offers both language lessons and cultural
+              insights. Enhance your skills through interactive quizzes, and
+              learn more about the purpose of the app in the About section.
+              Start your journey today and experience the beauty of the Korean
+              language and culture!
+            </p>
+            <button
+              class="mt-2 text-white bg-primary hover:bg-teal-400 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800"
+              type="button"
+              onclick="openModalFromElement('dist/img/portofolio_1.png', 'Korean Language Learning App', 'desc1')"
+            >
+              Read more...
+            </button>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="mb-12 p-4 md:w-1/2">
+            <div
+              class="rounded-md shadow-md overflow-hidden cursor-pointer"
+              onclick="openModalFromElement('dist/img/portofolio_2.png', 'Tourism App Sleman Wanderlust', 'desc2')"
+            >
+              <img
+                src="dist/img/portofolio_2.png"
+                alt="Tourism App Sleman Wanderlust"
+              />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+              Tourism App Sleman Wanderlust
+            </h3>
+            <p
+              id="desc2"
+              class="font-medium text-base text-secondary line-clamp-3"
+            >
+              Sleman Wanderlust App is an Android-based mobile application I
+              developed as my undergraduate thesis project at Universitas
+              Teknologi Yogyakarta. The app enhances the travel experience in
+              Sleman by offering key features such as destination
+              recommendations using the Haversine formula to calculate the
+              nearest attractions, tourist ticket booking and validation with
+              payment proof and QR code, local culinary exploration across
+              various categories, real-time navigation, bug reporting, and user
+              account management. Built using the Agile methodology, the app not
+              only ensures reliable functionality but also promotes sustainable
+              tourism by highlighting eco-friendly destinations and supporting
+              local culinary businesses.
+            </p>
+            <button
+              class="mt-2 text-white bg-primary hover:bg-teal-400 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800"
+              type="button"
+              onclick="openModalFromElement('dist/img/portofolio_2.png', 'Tourism App Sleman Wanderlust', 'desc2')"
+            >
+              Read more...
+            </button>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="mb-12 p-4 md:w-1/2">
+            <div
+              class="rounded-md shadow-md overflow-hidden cursor-pointer"
+              onclick="openModalFromElement('dist/img/portofolio_3.png', 'Fitsphere - Fintess Application', 'desc3')"
+            >
+              <img src="dist/img/portofolio_3.png" alt="Fitness Application" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+              FitSphere - Fitness Application
+            </h3>
+            <p
+              id="desc3"
+              class="font-medium text-base text-secondary line-clamp-3"
+            >
+              FitSphere is a fitness application designed with two roles: Member
+              and Admin. Members can purchase memberships and fitness classes
+              through an integrated Midtrans payment gateway, access the latest
+              fitness news, and display a QR code after purchasing a membership
+              or class to verify entry at the fitness center. The app also
+              provides a BMI calculator that offers personalized suggestions
+              through a pop-up, a feature to choose fitness consultants with
+              direct access via WhatsApp, and an exercise tracker to record
+              workout progress. For admins, FitSphere provides tools to manage
+              classes, memberships, and fitness news, as well as to oversee
+              registered consultants. Admins can also generate transaction
+              reports for membership and class purchases in daily, weekly,
+              monthly, or yearly summaries. Additionally, the system allows
+              admins to scan member QR codes to verify purchased memberships or
+              classes. With these features, FitSphere creates a seamless digital
+              ecosystem that supports both members and administrators in
+              managing their fitness activities effectively.
+            </p>
+            <button
+              class="mt-2 text-white bg-primary hover:bg-teal-400 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800"
+              type="button"
+              onclick="openModalFromElement('dist/img/portofolio_3.png', 'Fitsphere - Fintess Application', 'desc3')"
+            >
+              Read more...
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      id="portfolioModal"
+      class="fixed inset-0 bg-black bg-opacity-70 hidden items-center justify-center z-[9999] p-4"
+    >
+      <div
+        class="bg-white rounded-lg max-w-3xl w-full max-h-[90vh] flex flex-col"
+      >
+        <!-- Close Button -->
+        <button
+          onclick="closeModal()"
+          class="self-end p-4 text-gray-500 hover:text-red-500"
+        >
+          ✖
+        </button>
+
+        <!-- Image -->
+        <img
+          id="modalImage"
+          src=""
+          alt=""
+          class="w-full max-h-80 object-contain"
+        />
+
+        <!-- Content -->
+        <div class="p-4 flex-1 flex flex-col overflow-hidden">
+          <h3 id="modalTitle" class="font-bold text-2xl mb-3"></h3>
+          <!-- 👇 bagian desc scroll -->
+          <div
+            id="modalDesc"
+            class="text-gray-700 text-base flex-1 overflow-y-auto pr-3 text-justify"
+            style="max-height: 40vh"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Close Modal -->
+
+    <!-- Portofolio Section End -->
+
+    <!-- Footer Section Start -->
+
+    <section id="footer" class="bg-slate-700 pt-12 pb-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-between">
+          <!-- Kolom 1: Tentang -->
+          <div class="w-full md:w-1/2 mb-8 md:mb-0 text-slate-100">
+            <div
+              class="mb-4 bg-primary text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
+            >
+              <a href="#home" class="font-bold text-lg">AF</a>
+            </div>
+            <p class="mb-2">Freelance Android & Web Developer</p>
+            <p class="mb-2">
+              <a
+                href="mailto:akmalfaizy123258@gmail.com"
+                class="hover:text-primary transition-colors"
+              >
+                akmalfaizy123258@gmail.com
+              </a>
+            </p>
+            <p>
+              <a
+                href="https://www.google.com/maps/place/Jl.+Karya+Bhakti+No.29,+Bolenglang,+Kertasari,+Ciamis"
+                target="_blank"
+                class="hover:text-primary transition-colors"
+              >
+                Jl. Karya Bhakti No.29, Bolenglang, Kertasari, Ciamis
+              </a>
+            </p>
+          </div>
+
+          <!-- Kolom 2: Tautan -->
+          <div class="w-full md:w-1/4 text-slate-100">
+            <h3 class="font-semibold text-xl text-white mb-3">Tautan</h3>
+            <ul>
+              <li class="mb-2">
+                <a href="#home" class="hover:text-primary transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#about" class="hover:text-primary transition-colors"
+                  >About Me</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portofolio"
+                  class="hover:text-primary transition-colors"
+                  >Portofolio</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section End -->
+
+    <footer class="bg-slate-700 text-white py-6">
+      <div class="container mx-auto text-center">
+        <!-- Baris ikon sosial media -->
+        <div class="flex justify-center space-x-4 mb-4">
+          <!-- Instagram -->
+          <a
+            class="w-9 h-9 rounded-full flex justify-center items-center border border-white hover:border-primary hover:bg-primary hover:text-white"
+            href="https://www.instagram.com/akmalfaizy_/"
+            target="_blank"
+          >
+            <svg
+              class="fill-current"
+              role="img"
+              width="20"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Instagram</title>
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.338 3.608 1.314.975.975 1.251 2.242
+               1.313 3.608.058 1.265.069 1.645.069 4.849s-.012 3.584-.069 4.849c-.062 1.366-.338
+               2.633-1.313 3.608-.975.975-2.242 1.251-3.608 1.313-1.265.058-1.645.069-4.849.069s-3.584
+               -.012-4.849-.069c-1.366-.062-2.633-.338-3.608-1.313-.975-.975-1.251-2.242-1.313
+               -3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.849c.062-1.366.338-2.633
+               1.313-3.608.975-.975 2.242-1.251 3.608-1.313C8.416 2.175 8.796 2.163 12 2.163zm0
+               1.838c-3.177 0-3.547.012-4.797.069-1.159.053-1.791.24-2.205.399-.566.217-.972.478
+               -1.402.908s-.691.835-.908 1.402c-.159.414-.346 1.046-.399 2.205-.057 1.25-.069
+               1.62-.069 4.797s.012 3.547.069 4.797c.053 1.159.24 1.791.399 2.205.217.566.478.972
+               .908 1.402s.835.691 1.402.908c.414.159 1.046.346 2.205.399 1.25.057 1.62.069
+               4.797.069s3.547-.012 4.797-.069c1.159-.053 1.791-.24 2.205-.399.566-.217.972-.478
+               1.402-.908s.691-.835.908-1.402c.159-.414.346-1.046.399-2.205.057-1.25.069-1.62.069
+               -4.797s-.012-3.547-.069-4.797c-.053-1.159-.24-1.791-.399-2.205-.217-.566-.478-.972
+               -.908-1.402s-.835-.691-1.402-.908c-.414-.159-1.046-.346-2.205-.399-1.25-.057
+               -1.62-.069-4.797-.069z"
+              />
+              <path
+                d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0
+               10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998z"
+              />
+              <circle cx="18.406" cy="5.594" r="1.44" />
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            class="w-9 h-9 rounded-full flex justify-center items-center border border-white hover:border-primary hover:bg-primary hover:text-white"
+            href="https://www.linkedin.com/in/akmalfaizy/"
+            target="_blank"
+          >
+            <svg
+              class="fill-current"
+              role="img"
+              width="20"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>LinkedIn</title>
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.85
+               -3.037-1.853 0-2.136 1.445-2.136 2.938v5.668H9.353V9h3.415v1.561h.049c.476-.9
+               1.637-1.85 3.368-1.85 3.599 0 4.264 2.368 4.264 5.451v6.29zM5.337
+               7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.777
+               13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774
+               0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.208
+               24 24 23.227 24 22.271V1.729C24 .774 23.208 0 22.225 0z"
+              />
+            </svg>
+          </a>
+
+          <!-- GitHub -->
+          <a
+            class="w-9 h-9 mx-4 rounded-full flex justify-center items-center border border-white hover:border-primary hover:bg-primary hover:text-white"
+            href="https://github.com/akmalfaizy"
+            target="_blank"
+          >
+            <svg
+              class="fill-current"
+              role="img"
+              width="20"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>GitHub</title>
+              <path
+                d="M12 .297c-6.627 0-12 5.373-12 12 0 5.303 3.438 9.8
+               8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015
+               -2.04-3.338.725-4.042-1.61-4.042-1.61-.546-1.387-1.333
+               -1.758-1.333-1.758-1.089-.745.084-.729.084-.729 1.205.084
+               1.838 1.237 1.838 1.237 1.07 1.835 2.807 1.305 3.492.997
+               .108-.776.418-1.305.76-1.605-2.665-.305-5.467-1.335
+               -5.467-5.93 0-1.31.468-2.381 1.236-3.221-.124-.304-.536
+               -1.527.116-3.179 0 0 1.008-.323 3.301 1.23.96-.267
+               1.98-.399 3.002-.404 1.021.005 2.041.137 3.003.404
+               2.291-1.553 3.298-1.23 3.298-1.23.654 1.652.242 2.874.118
+               3.179.77.84 1.235 1.911 1.235 3.221 0 4.597-2.807
+               5.624-5.479 5.921.43.372.814 1.102.814 2.222 0 1.606-.014
+               2.903-.014 3.297 0 .319.218.694.825.576C20.565
+               22.092 24 17.592 24 12.297 24 5.67 18.627.297 12 .297z"
+              />
+            </svg>
+          </a>
+
+          <!-- Email -->
+          <a
+            class="w-9 h-9 rounded-full flex justify-center items-center border border-white hover:border-primary hover:bg-primary hover:text-white"
+            href="mailto:akmalfaizy123258@gmail.com"
+          >
+            <svg
+              class="fill-current"
+              role="img"
+              width="20"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Email</title>
+              <path
+                d="M2 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h20a2
+               2 0 0 0 2-2V6a2 2 0 0 0-2-2H2zm20 2l-10 7L2
+               6h20z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Copyright -->
+        <p class="text-sm">&copy; 2025 Akmal Faizy. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
