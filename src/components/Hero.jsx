@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { ArrowRight, Smartphone, Terminal, GraduationCap } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { ArrowRight, Smartphone, Terminal, GraduationCap } from "lucide-react";
 
-const roles = ['Android Developer', 'Creative Web Creator', 'Tech Visionary'];
+const roles = ["Android Developer", "Creative Web Creator", "Tech Visionary"];
 
 export default function Hero() {
-  const [roleText, setRoleText] = useState('');
+  const [roleText, setRoleText] = useState("");
   const [roleIndex, setRoleIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
@@ -13,7 +13,7 @@ export default function Hero() {
   useEffect(() => {
     let timer;
     const currentFullRole = roles[roleIndex];
-    
+
     if (isDeleting) {
       timer = setTimeout(() => {
         setRoleText((prev) => prev.slice(0, -1));
@@ -27,7 +27,7 @@ export default function Hero() {
     // Handle complete typing or complete deletion transitions
     if (!isDeleting && roleText === currentFullRole) {
       timer = setTimeout(() => setIsDeleting(true), 1500);
-    } else if (isDeleting && roleText === '') {
+    } else if (isDeleting && roleText === "") {
       setIsDeleting(false);
       setRoleIndex((prev) => (prev + 1) % roles.length);
     }
@@ -36,20 +36,23 @@ export default function Hero() {
   }, [roleText, roleIndex, isDeleting]);
 
   const handleExploreProjects = () => {
-    const el = document.getElementById('projects');
+    const el = document.getElementById("projects");
     if (el) {
       const offset = 80;
       const bodyRect = document.body.getBoundingClientRect().top;
       const elRect = el.getBoundingClientRect().top;
       window.scrollTo({
         top: elRect - bodyRect - offset,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden"
+    >
       {/* Aurora Radial Glow Blobs */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-[20%] left-[10%] w-[350px] h-[350px] rounded-full bg-primary/10 blur-[100px] animate-pulse-slow" />
@@ -61,12 +64,10 @@ export default function Hero() {
       <div className="absolute inset-0 bg-grid-glow z-0" />
 
       <div className="max-w-6xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
-        
         {/* Info Column */}
         <div className="lg:col-span-7 flex flex-col justify-center text-center lg:text-left">
-          
           {/* Micro digital badge */}
-          <motion.div 
+          <motion.div
             className="inline-flex self-center lg:self-start items-center gap-2 px-3 py-1.5 rounded-full border border-primary/20 bg-primary/5 text-primary text-[10px] uppercase font-mono tracking-widest mb-6 font-bold shadow-neon-cyan"
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
@@ -92,8 +93,14 @@ export default function Hero() {
           </div>
 
           <p className="mt-6 text-slate-400 text-sm md:text-base max-w-lg leading-relaxed text-justify lg:text-left">
-            Computer Science graduate from <strong className="text-white">University of Technology Yogyakarta</strong> (GPA <strong className="text-primary font-bold">3.80</strong>). 
-            A passionate Mobile Application Engineer crafting clean responsive digital solutions. Specializes in building modern android interfaces and custom tech startup infrastructures.
+            Computer Science graduate from{" "}
+            <strong className="text-white">
+              University of Technology Yogyakarta
+            </strong>{" "}
+            (GPA <strong className="text-primary font-bold">3.80</strong>). A
+            passionate Mobile Application Engineer crafting clean responsive
+            digital solutions. Specializes in building modern android interfaces
+            and custom tech startup infrastructures.
           </p>
 
           <div className="mt-6 inline-flex flex-col sm:flex-row self-center lg:self-start items-center gap-4 rounded-2xl border border-primary/15 bg-white/[0.03] px-5 py-4 backdrop-blur-sm">
@@ -122,7 +129,7 @@ export default function Hero() {
               Hire Me
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </a>
-            
+
             <button
               onClick={handleExploreProjects}
               className="w-full sm:w-auto px-8 py-3.5 rounded-full border border-white/10 hover:border-white/20 bg-white/5 hover:bg-white/10 text-white font-heading font-bold text-sm tracking-wider uppercase transition-all duration-300 hover:scale-[1.03]"
@@ -138,8 +145,12 @@ export default function Hero() {
                 <Smartphone className="w-4 h-4" />
               </div>
               <div>
-                <span className="block text-white font-heading font-extrabold text-sm">Android</span>
-                <span className="text-[10px] text-slate-500 font-mono">Expert native</span>
+                <span className="block text-white font-heading font-extrabold text-sm">
+                  Android
+                </span>
+                <span className="text-[10px] text-slate-500 font-mono">
+                  Expert native
+                </span>
               </div>
             </div>
             <div className="flex items-start gap-2.5">
@@ -147,8 +158,12 @@ export default function Hero() {
                 <Terminal className="w-4 h-4" />
               </div>
               <div>
-                <span className="block text-white font-heading font-extrabold text-sm">Laravel</span>
-                <span className="text-[10px] text-slate-500 font-mono">Full-stack web</span>
+                <span className="block text-white font-heading font-extrabold text-sm">
+                  Laravel
+                </span>
+                <span className="text-[10px] text-slate-500 font-mono">
+                  Full-stack web
+                </span>
               </div>
             </div>
             <div className="flex items-start gap-2.5">
@@ -156,12 +171,15 @@ export default function Hero() {
                 <GraduationCap className="w-4 h-4" />
               </div>
               <div>
-                <span className="block text-white font-heading font-extrabold text-sm">GPA 3.80</span>
-                <span className="text-[10px] text-slate-500 font-mono">UTY Academic</span>
+                <span className="block text-white font-heading font-extrabold text-sm">
+                  GPA 3.80
+                </span>
+                <span className="text-[10px] text-slate-500 font-mono">
+                  UTY Academic
+                </span>
               </div>
             </div>
           </div>
-
         </div>
 
         {/* Profile Photo - Clean & Borderless */}
@@ -177,22 +195,26 @@ export default function Hero() {
           >
             {/* Profile Image - clean, no border frame */}
             <img
-              src="dist/img/akmal_faizy.png"
+              src="/dist/img/akmal_faizy.png"
               alt="Akmal Faizy profile"
               className="w-[280px] md:w-[340px] rounded-[36px] object-cover object-top"
               style={{
-                boxShadow: '0 30px 60px -15px rgba(0,0,0,0.7), 0 0 30px rgba(6,182,212,0.12)'
+                boxShadow:
+                  "0 30px 60px -15px rgba(0,0,0,0.7), 0 0 30px rgba(6,182,212,0.12)",
               }}
             />
 
             {/* Floating name badge */}
             <div className="absolute bottom-4 left-4 right-4 z-20 p-3 rounded-2xl glass-card border border-white/10 text-center font-mono">
-              <span className="block text-white font-bold text-xs uppercase font-heading tracking-wide">Akmal Faizy</span>
-              <span className="text-[9px] text-primary">MOBILE &amp; WEB DEVELOPER</span>
+              <span className="block text-white font-bold text-xs uppercase font-heading tracking-wide">
+                Akmal Faizy
+              </span>
+              <span className="text-[9px] text-primary">
+                MOBILE &amp; WEB DEVELOPER
+              </span>
             </div>
           </motion.div>
         </div>
-
       </div>
     </section>
   );
