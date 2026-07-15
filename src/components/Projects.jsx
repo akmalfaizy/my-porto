@@ -63,7 +63,7 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Travine.id",
+    title: "travine.id",
     category: "Live Web Project",
     image: null,
     gridClass: "md:col-span-1",
@@ -71,7 +71,7 @@ const projectsData = [
     shortDesc:
       "The official website of Travine Tour, a Yogyakarta-based tour and travel provider offering personalized travel packages and integrated services.",
     longDesc: [
-      "Travine.id is the official website of Travine Tour, a Yogyakarta-based tour and travel service provider. The platform focuses on offering more personal and meaningful travel experiences, managed directly by an experienced local team.",
+      "travine.id is the official website of Travine Tour, a Yogyakarta-based tour and travel service provider. The platform focuses on offering more personal and meaningful travel experiences, managed directly by an experienced local team.",
       "The platform offers several thematic travel packages, including Heritage packages for history and culture, Nature packages for landscape exploration, Wellness packages for fitness and relaxation, Culinary packages for authentic Yogyakarta food experiences, Creative packages for educational or local art activities, and Custom packages for customers who want to design their own itinerary.",
       "Beyond travel packages, the website also integrates three core travel needs: destinations, accommodation, and transportation. Travine presents recommendations for interesting places in Yogyakarta, lodging options, and transportation support for traveler mobility.",
       "Travine Tour highlights several key strengths: experienced local guides, competitive pricing, a broad destination catalog, and 24-hour customer support.",
@@ -82,7 +82,7 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "Morganizerr.com",
+    title: "morganizerr.com",
     category: "Live Web Project",
     image: null,
     gridClass: "md:col-span-1",
@@ -100,6 +100,46 @@ const projectsData = [
     demo: "https://morganizerr.com/",
     type: "web",
   },
+  {
+  id: 6,
+  title: "enafcollection.store",
+  category: "Live Web Project",
+  image: null,
+  gridClass: "md:col-span-1",
+  tech: ["Web Development", "E-Commerce", "Responsive", "SEO"],
+  shortDesc:
+    "An online store and promotional website for Enaf Collection, showcasing premium hijabs with a modern shopping experience and responsive design.",
+  longDesc: [
+    "Enaf Collection Store is an e-commerce website developed to promote and sell various hijab products online. The platform provides customers with an easy, fast, and convenient shopping experience.",
+    "The website features a clean and modern interface that highlights product collections through high-quality images, detailed descriptions, and clear pricing, making it easier for customers to explore available products.",
+    "Built with a responsive design, the website delivers a seamless browsing experience across desktop, tablet, and mobile devices, ensuring accessibility for customers wherever they shop.",
+    "SEO optimization and performance improvements were implemented to increase online visibility, improve search engine rankings, and help attract more potential customers organically.",
+    "Through this platform, Enaf Collection strengthens its digital presence, expands its market reach, and provides a professional online storefront to support business growth and customer engagement.",
+  ],
+  github: null,
+  demo: "https://enafcollection.store/",
+  type: "web",
+},
+{
+  id: 7, 
+  title: "wifacorp.com",
+  category: "Corporate Profile Website",
+  image: null,
+  gridClass: "md:col-span-1",
+  tech: ["Web Development", "Corporate Website", "Responsive", "SEO"],
+  shortDesc:
+    "A modern corporate profile website for WIFA Corporation, showcasing its diversified businesses in investment, manufacturing, healthcare, and construction.",
+  longDesc: [
+    "WIFA Corporation is a diversified business group operating across multiple strategic industries, including investment, manufacturing, healthcare, and construction. The website serves as the company's official digital presence, introducing its vision, business sectors, and corporate values.",
+    "The platform presents detailed information about each business division through a clean and professional interface, helping visitors, investors, and potential partners better understand the company's capabilities and long-term commitment to sustainable growth.",
+    "Designed with a responsive and user-friendly layout, the website provides an optimal browsing experience across desktop, tablet, and mobile devices while maintaining a strong corporate identity.",
+    "SEO optimization and performance enhancements were implemented to improve search engine visibility, strengthen the company's online presence, and increase credibility among stakeholders.",
+    "Through this corporate website, WIFA Corporation reinforces its brand image as a trusted and forward-thinking enterprise committed to delivering innovation, quality, and sustainable development across its business sectors.",
+  ],
+  github: null,
+  demo: "https://wifacorp.com/",
+  type: "web",
+},
 ];
 
 // Placeholder card for web projects with no screenshot
