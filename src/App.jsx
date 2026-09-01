@@ -11,6 +11,7 @@ import Organization from './components/Organization';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Invoice from './components/Invoice';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -18,6 +19,31 @@ function App() {
   const [isMobile, setIsMobile] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const [projectModalOpen, setProjectModalOpen] = useState(false);
+  const [currentRoute, setCurrentRoute] = useState(() => {
+    const fullUrl = (window.location.pathname + window.location.hash + window.location.search).toLowerCase();
+    if (fullUrl.includes('invoice')) {
+      return 'invoice';
+    }
+    return 'home';
+  });
+
+  useEffect(() => {
+    const checkRoute = () => {
+      const fullUrl = (window.location.pathname + window.location.hash + window.location.search).toLowerCase();
+      if (fullUrl.includes('invoice')) {
+        setCurrentRoute('invoice');
+      } else {
+        setCurrentRoute('home');
+      }
+    };
+
+    window.addEventListener('popstate', checkRoute);
+    window.addEventListener('hashchange', checkRoute);
+    return () => {
+      window.removeEventListener('popstate', checkRoute);
+      window.removeEventListener('hashchange', checkRoute);
+    };
+  }, []);
 
   // Initialize Lenis smooth scroll
   useEffect(() => {
@@ -92,6 +118,14 @@ function App() {
     <>
       {loading ? (
         <LoadingScreen onComplete={() => setLoading(false)} />
+      ) : currentRoute === 'invoice' ? (
+        <Invoice onBack={() => {
+          window.location.hash = '';
+          if (window.history.length > 1) {
+            window.history.pushState(null, '', '/');
+          }
+          setCurrentRoute('home');
+        }} />
       ) : (
         <div className="relative min-h-screen bg-dark bg-grid-pattern overflow-hidden text-slate-100 selection:bg-primary selection:text-dark">
           {/* Custom Cursor Glow (Desktop Only) */}
