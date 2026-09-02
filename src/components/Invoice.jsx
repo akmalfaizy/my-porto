@@ -57,7 +57,7 @@ NO  DESKRIPSI FITUR / MODUL UTAMA                                  JUMLAH (IDR)
     - Validasi Data NIK 16 digit, No. KIS, Spesifikasi Kendaraan & Upload Berkas
     - Alokasi Nomor Start Otomatis & Compaction Pool (Auto Merapikan Nomor)
 
-4.  DASHBOARD ADMIN PADDOCK BARU & VERIFIKASI BOOKING              Rp  1.500.000
+4.  DASHBOARD ADMIN PADDOCK BARU & VERIFIKASI BOOKING              Rp  2.500.000
     - Dashboard Khusus Monitoring & Pengelolaan Slot Paddock Real-Time
     - Modul Verifikasi Pembayaran Booking Paddock & Konfirmasi Manual
     - Fitur Cetak Bukti Nota Booking Paddock & Export Data Paddock Excel
@@ -69,15 +69,15 @@ NO  DESKRIPSI FITUR / MODUL UTAMA                                  JUMLAH (IDR)
     - Cetak Form Scrutineering (Pemeriksaan Teknis Kendaraan Balap)
     - Auto Push Google Spreadsheet API & Export Excel Sensor Timing
 --------------------------------------------------------------------------------
-SUBTOTAL                                                           Rp 14.000.000
-POTONGAN DISKON / BONUS                                            Rp          0
+SUBTOTAL                                                           Rp 15.000.000
+POTONGAN DISKON / BONUS                                            Rp  1.000.000
 --------------------------------------------------------------------------------
 TOTAL TAGIHAN                                                      Rp 14.000.000
 ================================================================================
 
 METODE PEMBAYARAN:
-Bank          : BNI
-No. Rekening  : 0534451093
+Bank          : BCA
+No. Rekening  : 8020892952
 Atas Nama     : Dandy Aurellio Pradana
 
 SYARAT & KETENTUAN:
@@ -145,8 +145,8 @@ Terima kasih atas kerja samanya!`;
     {
       no: 4,
       title: "DASHBOARD ADMIN PADDOCK BARU & VERIFIKASI BOOKING",
-      price: 1500000,
-      priceFormatted: "Rp 1.500.000",
+      price: 2500000,
+      priceFormatted: "Rp 2.500.000",
       features: [
         "Dashboard Khusus Monitoring & Pengelolaan Slot Paddock Real-Time",
         "Modul Verifikasi Pembayaran Booking Paddock & Konfirmasi Manual",
@@ -402,11 +402,11 @@ Terima kasih atas kerja samanya!`;
               <div className="w-full md:w-80 space-y-1.5 font-mono">
                 <div className="flex justify-between items-center text-[11px] text-slate-500">
                   <span>SUBTOTAL</span>
-                  <span className="font-bold text-slate-800">Rp 14.000.000</span>
+                  <span className="font-bold text-slate-800">Rp 15.000.000</span>
                 </div>
                 <div className="flex justify-between items-center text-[11px] text-slate-500">
                   <span>POTONGAN DISKON / BONUS</span>
-                  <span className="font-bold text-emerald-600">Rp 0</span>
+                  <span className="font-bold text-emerald-600">- Rp 1.000.000</span>
                 </div>
                 <div className="h-px bg-slate-200 my-1" />
                 <div className="flex justify-between items-center text-sm font-heading font-bold text-white bg-slate-900 p-3 rounded-xl shadow-sm">
@@ -429,11 +429,11 @@ Terima kasih atas kerja samanya!`;
                 <ul className="space-y-1 text-[11px] font-mono text-slate-700">
                   <li className="flex justify-between border-b border-slate-200/60 pb-1">
                     <span className="text-slate-500">Bank</span>
-                    <strong className="text-slate-900">BNI</strong>
+                    <strong className="text-slate-900">BCA</strong>
                   </li>
                   <li className="flex justify-between border-b border-slate-200/60 pb-1">
                     <span className="text-slate-500">No. Rekening</span>
-                    <strong className="text-blue-700 font-mono text-xs">0534451093</strong>
+                    <strong className="text-blue-700 font-mono text-xs">8020892952</strong>
                   </li>
                   <li className="flex justify-between">
                     <span className="text-slate-500">Atas Nama</span>
