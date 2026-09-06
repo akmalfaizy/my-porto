@@ -3,10 +3,10 @@ import { CheckCircle } from 'lucide-react';
 
 const organizationData = [
   {
-    role: 'Train Attendant',
-    org: 'Professional Service Role',
+    role: 'Social Media & Website Administrator',
+    org: 'Digital Marketing & Content Management Role',
     period: 'January 2026 - Present',
-    desc: 'Providing passenger service, operational support, and safety-oriented assistance in train travel environments, with emphasis on communication, discipline, and service reliability.'
+    desc: "Managing Travine.id's social media presence and website by creating and publishing content, maintaining website updates, optimizing digital engagement, and ensuring consistent brand communication across online platforms. Supporting marketing initiatives through content planning, performance monitoring, and website management to enhance user experience and brand visibility."
   },
   {
     role: 'Freelance Mobile & Web Developer',
