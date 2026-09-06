@@ -5,7 +5,7 @@ const organizationData = [
   {
     role: 'Social Media & Website Administrator',
     org: 'Digital Marketing & Content Management Role',
-    period: 'January 2026 - Present',
+    period: 'December 2025 - Present',
     desc: "Managing Travine.id's social media presence and website by creating and publishing content, maintaining website updates, optimizing digital engagement, and ensuring consistent brand communication across online platforms. Supporting marketing initiatives through content planning, performance monitoring, and website management to enhance user experience and brand visibility."
   },
   {
